@@ -32,8 +32,8 @@ export default class UserStore {
     }
 
     getFollowers(username) {
-        const query='MATCH (me:User {username:{username}})<-[r:FOLLOWS]-(folower) ' +
-            'RETURN folower.foto,folower.username ORDER BY r.since DESC';
+        const query='MATCH (me:User {username:{username}})<-[r:FOLLOWS]-(follower) ' +
+            'RETURN follower.foto,follower.username ORDER BY r.since DESC';
         return db.cypherQuery(query,{username}).then((data)=>data.map((u)=>this._parseUserWithColumns(['foto','username'],u)));
     }
 
