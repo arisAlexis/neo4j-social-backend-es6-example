@@ -1,0 +1,8 @@
+CREATE CONSTRAINT ON (user:User) ASSERT user.username IS UNIQUE;
+CREATE CONSTRAINT ON (user:User) ASSERT user.email IS UNIQUE;
+CREATE INDEX ON :User(fullName);
+
+#some sample data to copy paste
+create (user:User {username:'arisalexis',email:'aris@arisalexis.com'})
+create (user:User {username:'halo',email:'halo@echo.com'})
+create (user:User {username:'mistia',email:'mistia@hey.co'})
