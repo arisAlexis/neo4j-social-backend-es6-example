@@ -20,3 +20,5 @@ Running it:
 4. edit config/default.json
 5. npm install
 6. npm test test/*
+
+For more info you can check [this](http://arisalexis.com/2015/08/31/building-a-modern-backend-with-es6-and-neo4j/]) blog post.
