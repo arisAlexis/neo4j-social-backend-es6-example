@@ -52,7 +52,6 @@ function deleteFromIndex(index,nodeId) {
 
 }
 
-//fuction that transforms the quirky result schema to normal JSON objects
 function transformData(results) {
     //console.log('results:\n'+util.inspect(results,{depth:null}));
     let rows=[];
