@@ -56,9 +56,9 @@ describe('User store test',function() {
             ]);
     });
 
-    //integration style test here
     it('search',()=>expect(userStore.search('icol')).to.eventually.have.deep.property('[0].fullName','nicolas'));
 
+    //integration style test here
     it('follow',()=>{
         const followPromise=userStore.follow('testUser1','testUser2');
         const followPromise2=followPromise.then(userStore.follow('testUser3','testUser2'));
