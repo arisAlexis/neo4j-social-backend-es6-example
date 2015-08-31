@@ -15,7 +15,8 @@ Stack used is:
 Running it:
 
 1. download and run the no4j community edition server.
-2. clone this repo
-3. edit config/default.json
-4. npm install
-5. npm test test/*
+2. paste ext/dbSchema constrains into the neo4j web interface command line 
+3. clone this repo
+4. edit config/default.json
+5. npm install
+6. npm test test/*
