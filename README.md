@@ -2,6 +2,8 @@ This project is an example of a backend for a site with users follwing each othe
 You can see how Neo4j can be used with a minimal wrapper around it's HTTP API and how you can use ES6 Promises for writing and testing
 completely callbackless code.
 
+*Important to note is that express routes are not setup. The files that are interesting to look at are the database connectors,the models and the stores.*
+
 Stack used is:
 
 1. Node.js 0.12
